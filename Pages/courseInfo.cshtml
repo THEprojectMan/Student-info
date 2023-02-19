@@ -1,0 +1,29 @@
+﻿@page
+@model courseInfoModel
+@{
+    ViewData["Title"] = "Course";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to enter course information.</p>
+
+<form method="post">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Course ID</label>
+        <input type="text" name="courseId" class="form-control" id="exampleFormControlInput1" placeholder="Your course ID">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Subject Name</label>
+        <input type="text" name="subName" class="form-control" id="exampleFormControlInput1" placeholder="Subject Name">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Lecturer Name</label>
+        <input type="text" name="lecName" class="form-control" id="exampleFormControlInput1" placeholder="Lecturer name">
+    </div>
+
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    </div>
+</form>
